@@ -19,7 +19,8 @@ Crime is not only a legal concern but also a mirror of a nation’s social and e
 
 ---
 ## Data Sources
-**The datas have been used:** 
+**The datas have been used:**  
+The datas are for 2022 and the other years will be not be taken into account.
 ### 1.World Crime Index:
  - Provides global estimates of perceived crime and safety levels based on public surveys. It measures how safe people feel in their countries rather than official crime rates, making it suitable for cross-country comparisons.
  - https://www.kaggle.com/datasets/ahmadjalalmasood123/world-crime-index?select=World+Crime+Index+.csv
@@ -34,19 +35,20 @@ Crime is not only a legal concern but also a mirror of a nation’s social and e
  - https://data.worldbank.org/indicator/SP.DYN.LE00.IN?end=2023&most_recent_year_desc=true&start=1960
 
 
+
 ---
 ## Methodology / Data Preparation Plan
 ### Data Collection:
  - Datasets are obtained from Kaggle and the World Bank, including global indicators for happiness, education, life expectancy, and crime levels. All files are downloaded in CSV format and imported into Python for processing.
 
 ### Data Cleaning:
-- Country names are standardized to ensure consistency across datasets. Missing values are handled through median or regional mean imputation, and irrelevant columns (e.g., notes, codes) are removed to maintain analytical clarity.
+- Country names are standardized to ensure consistency across datasets. Missing values are handled through median or regional mean imputation, and irrelevant columns are removed to maintain analytical clarity.
 
 ### Data Integration:
 - The datasets are merged using the common variable Country, forming a unified dataset containing social and economic indicators alongside crime perception scores. Only countries with complete key variables are retained for analysis.
 
 ### Feature Engineering:
- - After merging all datasets, the variables — including happiness, education rate, life expectancy, and crime index — will be standardized to a common 0–1 scale to allow fair comparison across indicators. Additional derived metrics, such as the education-to-crime ratio and happiness-to-crime ratio, will be generated to capture the relative impact of social well-being on crime levels. Finally, each country will be categorized by region (for example, Europe, Asia, or Africa) to enable regional comparisons and identify broader geographic patterns in the data.
+ - After merging all datasets, the variables including happiness, education rate, life expectancy, and crime index  will be standardized to a common 0–1 scale to allow fair comparison across indicators. Additional derived metrics, such as the education-to-crime ratio and happiness-to-crime ratio, will be generated to capture the relative impact of social well-being on crime levels. Finally, each country will be categorized by region (for example, Europe, Asia, or Africa) to enable regional comparisons and identify broader geographic patterns in the data.
 
 
 ---
@@ -59,7 +61,7 @@ Crime is not only a legal concern but also a mirror of a nation’s social and e
  - Compare regional differences (e.g., Europe vs. Asia) to observe how development level influences crime perception. Examine whether higher education or happiness levels consistently correspond to lower crime rates across different regions.
 
 ### Visualization:
- - Use scatter plots and heatmaps to display correlations among variables, and regression plots to illustrate how changes in education, health, and happiness relate to variations in crime levels. Choropleth maps will be created to visualize global patterns in crime perception.
+ - Use scatter plots and line graph to display correlations among variables, and regression plots to illustrate how changes in education, health, and happiness relate to variations in crime levels. Choropleth maps will be created to visualize global patterns in crime perception.
 
 
 ---
@@ -71,7 +73,7 @@ This project aims to provide data-driven insights into how social well-being ind
 
  - Quantified correlations showing that higher education and happiness levels are linked to lower crime indices.
 
- - Statistical evidence that life expectancy (as a proxy for health and welfare) also contributes to reduced crime perception.
+ - Statistical evidence that life expectancy  also contributes to reduced crime perception.
 
  -  Visual patterns across regions illustrating that developed countries tend to have safer environments compared to developing ones.
 
