@@ -9,18 +9,18 @@ Crime is not only a legal concern but also a reflection of a nation’s social a
 
 ---
 ## Research Questions / Hypotheses
-1- To what extent does a higher education rate contribute to a reduction in crime perception across countries?
+1- To what extent does a higher education rate contribute to a reduction in crime perception for Turkey?
 
 2- Is there a significant negative relationship between happiness levels and the crime index?
 
 3- How does life expectancy, as an indicator of overall health and social well-being, influence crime levels?
 
-4- Among the key social indicators happiness, education, and health  which exerts the strongest impact on reducing crime globally?
+4- Among the key social indicators happiness, education, and health  which exerts the strongest impact on reducing crime for Turkey?
 
 ---
 ## Data Sources
 **The datas have been used:**  
-The datas are for 2022 and the other years will be not be taken into account. Only the Turkey data will be used for the analysis
+The datas are for 2022 and the other years will be not be taken into account. Only the Country : Turkey datas will be used for the analysis
 ### 1.World Crime Index:
  - Provides global estimates of perceived crime and safety levels based on public surveys. It measures how safe people feel in their countries rather than official crime rates, making it suitable for cross-country comparisons.
  - https://www.kaggle.com/datasets/ahmadjalalmasood123/world-crime-index?select=World+Crime+Index+.csv
@@ -42,39 +42,42 @@ The datas are for 2022 and the other years will be not be taken into account. On
  - Datasets are obtained from Kaggle and the World Bank, including global indicators for happiness, education, life expectancy, and crime levels. All files are downloaded in CSV format and imported into Python for processing.
 
 ### Data Cleaning:
-- Country names are standardized to ensure consistency across datasets. Missing values are handled through median or regional mean imputation, and irrelevant columns are removed to maintain analytical clarity.
+- The countries are removed only the Turkey's will be used and irrelevant columns are removed to maintain analytical clarity.
 
 ### Data Integration:
-- The datasets are merged using the common variable Country, forming a unified dataset containing social and economic indicators alongside crime perception scores. Only countries with complete key variables are retained for analysis.
+- The datasets are merged using the common variable Country, forming a unified dataset containing social and economic indicators alongside crime perception scores. Only Turkey data are retained for analysis.
 
 ### Feature Engineering:
- - After merging all datasets, the variables including happiness, education rate, life expectancy, and crime index  will be standardized to a common 0–1 scale to allow fair comparison across indicators. Additional derived metrics, such as the education-to-crime ratio and happiness-to-crime ratio, will be generated to capture the relative impact of social well-being on crime levels. Finally, each country will be categorized by region (for example, Europe, Asia, or Africa) to enable regional comparisons and identify broader geographic patterns in the data.
+ -  Since the dataset represents a single year (2022) rather than a time series, normalization could reduce the visibility of real differences between variables. Therefore, each indicator — such as happiness score, education rate, life expectancy, and crime index — will be presented in its original range to more accurately illustrate their relationships.Additionaly derived metrics such as the education-to-crime ratio and happiness-to-crime ratio, will be generated to capture the relative impact of social well-being on crime levels. 
 
 
 ---
-# Analysis Plan
+## Analysis Plan
 
 ### Statistical Analysis:
- - Conduct correlation and regression analyses to measure how happiness, education rate, and life expectancy affect the crime index. Use statistical tests such as Pearson correlation and multiple linear regression to identify significant relationships between the variables.
+ - Conduct correlation and regression analyses to measure how happiness, education rate, and life expectancy influence the crime index within Turkey. Use statistical tests such as Pearson correlation and multiple linear regression to identify significant relationships among the variables for the year 2022.
 
 ### Comparative Analysis:
- - Compare regional differences (e.g., Europe vs. Asia) to observe how development level influences crime perception. Examine whether higher education or happiness levels consistently correspond to lower crime rates across different regions.
+ - Examine the relative strength of each variable’s impact on crime perception. Compare how education, health, and happiness differ in their association with the crime index to determine which factor contributes most to safety perception in Turkey.
 
 ### Visualization:
- - Use scatter plots and line graph to display correlations among variables, and regression plots to illustrate how changes in education, health, and happiness relate to variations in crime levels. Choropleth maps will be created to visualize global patterns in crime perception.
+ - Use scatter plots and regression lines to illustrate the relationships between variables, highlighting how changes in happiness, education rate, and life expectancy correspond to variations in the crime index. Bar charts and correlation heatmaps will also be used to clearly present these relationships for Turkey in 2022.
 
 
 ---
-# Expected Outcomes / Deliverables
+## Expected Outcomes / Deliverables
 
-This project aims to provide data-driven insights into how social well-being indicators happiness, education, and health influence global crime perception.
+This project aims to provide data-driven insights into how social well-being indicators happiness, education, and health influence global crime perception in Turkey.
 
 **Expected findings include:** 
 
- - Quantified correlations showing that higher education and happiness levels are linked to lower crime indices.
-
+ - Quantified correlations showing that higher education and happiness levels in Turkey are linked to lower crime indices.
  - Statistical evidence that life expectancy  also contributes to reduced crime perception.
+ -  Visual results illustrating how changes in happiness, education rate, and life expectancy relate to variations in the crime index within Turkey.
+ -  Regression-based conclusions identifying education and happiness as the strongest predictors of safety, revealing how social progress can reduce perceived crime in Turkey
 
- -  Visual patterns across regions illustrating that developed countries tend to have safer environments compared to developing ones.
+## Limitations:
+This study focuses only on Turkey and uses data from a single year (2022), which limits the ability to observe trends or changes over time. Additionally, the variables are based on perception-based indices such as the Crime Index and Happiness Score, which may include subjective bias. Data availability from different sources might also introduce slight inconsistencies in measurement or reporting.
 
- -  Regression-based conclusions identifying education and happiness as the strongest predictors of safety, revealing how social progress can reduce perceived crime globally.
+## Future Work:
+Future extensions of this study could involve expanding the dataset to include multiple years to observe temporal trends in the relationship between social indicators and crime perception. Cross-country comparisons could also provide a broader understanding of cultural and economic effects on crime perception. Additionally, integrating more complex analytical models or machine learning approaches could enhance prediction accuracy and uncover deeper insights into how education, health, and happiness contribute to safety and social stability.
