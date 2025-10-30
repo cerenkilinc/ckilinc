@@ -36,6 +36,19 @@ Crime is not only a legal concern but also a mirror of a nation’s social and e
 
 ---
 ## Methodology / Data Preparation Plan
+### Data Collection:
+ - Datasets are obtained from Kaggle and the World Bank, including global indicators for happiness, education, life expectancy, and crime levels. All files are downloaded in CSV format and imported into Python for processing.
+
+### Data Cleaning:
+- Country names are standardized to ensure consistency across datasets. Missing values are handled through median or regional mean imputation, and irrelevant columns (e.g., notes, codes) are removed to maintain analytical clarity.
+
+### Data Integration:
+- The datasets are merged using the common variable Country, forming a unified dataset containing social and economic indicators alongside crime perception scores. Only countries with complete key variables are retained for analysis.
+
+
+
+
+
 
 ---
 # Analysis Plan
