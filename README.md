@@ -62,6 +62,17 @@ Crime is not only a legal concern but also a mirror of a nation’s social and e
  - Use scatter plots and heatmaps to display correlations among variables, and regression plots to illustrate how changes in education, health, and happiness relate to variations in crime levels. Choropleth maps will be created to visualize global patterns in crime perception.
 
 
-
 ---
 # Expected Outcomes / Deliverables
+
+This project aims to provide data-driven insights into how social well-being indicators happiness, education, and health influence global crime perception.
+
+**Expected findings include:** 
+
+ - Quantified correlations showing that higher education and happiness levels are linked to lower crime indices.
+
+ - Statistical evidence that life expectancy (as a proxy for health and welfare) also contributes to reduced crime perception.
+
+ -  Visual patterns across regions illustrating that developed countries tend to have safer environments compared to developing ones.
+
+ -  Regression-based conclusions identifying education and happiness as the strongest predictors of safety, revealing how social progress can reduce perceived crime globally.
