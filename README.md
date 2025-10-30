@@ -76,8 +76,8 @@ This project aims to provide data-driven insights into how social well-being ind
  -  Visual results illustrating how changes in happiness, education rate, and life expectancy relate to variations in the crime index within Turkey.
  -  Regression-based conclusions identifying education and happiness as the strongest predictors of safety, revealing how social progress can reduce perceived crime in Turkey
 
-## Limitations:
+## Limitations
 This study focuses only on Turkey and uses data from a single year (2022), which limits the ability to observe trends or changes over time. Additionally, the variables are based on perception-based indices such as the Crime Index and Happiness Score, which may include subjective bias. Data availability from different sources might also introduce slight inconsistencies in measurement or reporting.
 
-## Future Work:
+## Future Work
 Future extensions of this study could involve expanding the dataset to include multiple years to observe temporal trends in the relationship between social indicators and crime perception. Cross-country comparisons could also provide a broader understanding of cultural and economic effects on crime perception. Additionally, integrating more complex analytical models or machine learning approaches could enhance prediction accuracy and uncover deeper insights into how education, health, and happiness contribute to safety and social stability.
