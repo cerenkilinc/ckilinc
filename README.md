@@ -45,13 +45,23 @@ Crime is not only a legal concern but also a mirror of a nation’s social and e
 ### Data Integration:
 - The datasets are merged using the common variable Country, forming a unified dataset containing social and economic indicators alongside crime perception scores. Only countries with complete key variables are retained for analysis.
 
-
-
-
+### Feature Engineering:
+ - After merging all datasets, the variables — including happiness, education rate, life expectancy, and crime index — will be standardized to a common 0–1 scale to allow fair comparison across indicators. Additional derived metrics, such as the education-to-crime ratio and happiness-to-crime ratio, will be generated to capture the relative impact of social well-being on crime levels. Finally, each country will be categorized by region (for example, Europe, Asia, or Africa) to enable regional comparisons and identify broader geographic patterns in the data.
 
 
 ---
 # Analysis Plan
+
+### Statistical Analysis:
+ - Conduct correlation and regression analyses to measure how happiness, education rate, and life expectancy affect the crime index. Use statistical tests such as Pearson correlation and multiple linear regression to identify significant relationships between the variables.
+
+### Comparative Analysis:
+ - Compare regional differences (e.g., Europe vs. Asia) to observe how development level influences crime perception. Examine whether higher education or happiness levels consistently correspond to lower crime rates across different regions.
+
+### Visualization:
+ - Use scatter plots and heatmaps to display correlations among variables, and regression plots to illustrate how changes in education, health, and happiness relate to variations in crime levels. Choropleth maps will be created to visualize global patterns in crime perception.
+
+
 
 ---
 # Expected Outcomes / Deliverables
